@@ -1,0 +1,86 @@
+@import './vars';
+
+//////////////////////////////////
+// hero
+//////////////////////////////////
+
+.hero {
+
+    div:first-child {
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+    }
+}
+
+//////////////////////////////////
+// chapter
+//////////////////////////////////
+
+.chapter {
+
+    &.c3 {
+        padding: 1em 0;
+        margin: 1em 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .deck {
+            flex-wrap: wrap;
+
+            .card {
+                width: 85%;
+                margin: 1em;
+            }
+        }
+    }
+}
+
+//////////////////////////////////
+// social
+//////////////////////////////////
+
+.social {
+    transform: translateX(-200px);    
+    transition: transform .5s;
+}
+
+//////////////////////////////////
+// footer
+//////////////////////////////////
+
+.footer {
+    overflow: hidden;
+
+    ul {
+        display: flex;
+        align-items: flex-end;
+        padding: 2em 1em 4em 1em;
+
+        li {
+            font-weight: 200;
+            text-align: end;
+            width: 100%;
+            padding: .2em 2em;
+            margin: .1em 0;
+            border-right: 1px solid $color_main;
+
+            &:hover {
+                border-right: 2px solid $color_main;
+            }
+        }
+    }
+}

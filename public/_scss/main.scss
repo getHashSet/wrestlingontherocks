@@ -1,0 +1,244 @@
+@import './vars';
+
+//////////////////////////////////
+// reset
+////////////////////////////////
+
+body,
+html {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+    font-size: 16px;
+    font-family: $font_body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font_title;
+    margin: 0;
+    padding: 0;
+}
+
+//////////////////////////////////
+// fonts
+//////////////////////////////////
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Open+Sans:300,400,400i,700,800&display=swap');
+
+//////////////////////////////////
+// hero
+//////////////////////////////////
+
+.heroImage {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(./images/hero_2.jpg);
+    background-size: cover;
+    background-position: top center;
+    z-index: -1 !important;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(#000, .3);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        padding: 1em;
+        color: #fff;
+        line-height: 1.2em;
+        text-shadow: 0 0 4px #000;
+        z-index: 2 !important;
+        display: block;
+        font-size: 5em;
+        font-weight: 900;
+    }
+
+    
+}
+
+//////////////////////////////////
+// chapters
+//////////////////////////////////
+
+.chapter {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5em;
+
+    h2 {
+        font-weight: 200;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 1.5em;
+        line-height: 2em;
+        font-family: $font_special;
+        text-transform: capitalize;
+    }
+
+    p {
+        line-height: 1.5em;
+    }
+
+    &.c1 {
+        position: relative;
+        padding: 3em 0 2em 0;
+        overflow: hidden;
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+    }
+}
+
+
+//////////////////////////////////
+// footer
+//////////////////////////////////
+
+footer {
+    position: relative;
+    width: 100%;
+    min-height: 15vh !important;
+    background-color: $color_dark;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: $color_main;
+        }
+    }
+
+    ul {
+        text-decoration: none;
+        list-style: none;
+        display: flex;  
+        flex-wrap: wrap;  
+        font-size: 1.2em;
+
+        li {
+            padding: 1em;
+
+            a {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+
+    .legal {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5em;
+        color: $color_light;
+    }
+}
+
+//////////////////////////////////
+// social
+//////////////////////////////////
+
+.social {
+    position: fixed;
+    left: 0;
+    bottom: 3em;
+    color: #fff;
+    padding: 1em;
+    transform: translateX(-200px);    
+    transition: transform .5s;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+            color: #fff;
+        }
+    }
+
+    div {
+        padding: .4em;
+        font-size: 1.7em;
+        width: 3em;
+        text-align: right;
+        transform: translateX(-2.6em);
+        transition: transform .2s;
+
+        &:hover {
+            transform: translateX(-1.9em);
+            cursor: pointer;
+        }
+
+        &:active ion-icon {
+            transform: translateY(3px);
+        }
+    }
+
+
+    .facebook {
+        background-color: $light_blue;
+    }
+
+    .twitter {
+        background-color: $extra_light_blue;
+    }
+
+    .linkedin {
+        background-color: $blue;
+    }
+
+    .mail {
+        background-color: $color_dark;
+        color: #fff;
+    }
+
+    .phone {
+        background-color: $green;
+    }
+}
+
+.show {
+    transform: translateX(0);
+    transition: transform .5s;
+}
+
+.card_show {
+    transform: translate(0, 0) !important;
+    opacity: 1 !important;
+    transition: transform .3s, opacity .3s;
+}

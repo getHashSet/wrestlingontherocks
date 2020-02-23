@@ -1,0 +1,60 @@
+.hero div:first-child h1 {
+  font-size: 3em; }
+
+.hero div:first-child h2 {
+  font-size: 1.2em; }
+
+.chapter.c3 {
+  padding: 1em 0;
+  margin: 1em 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .chapter.c3 h2 {
+    width: 100%;
+    text-align: center; }
+  .chapter.c3 .deck {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .chapter.c3 .deck .card {
+      width: 85%;
+      margin: 1em; }
+
+.social {
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  -o-transition: transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s; }
+
+.footer {
+  overflow: hidden; }
+  .footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 2em 1em 4em 1em; }
+    .footer ul li {
+      font-weight: 200;
+      text-align: end;
+      width: 100%;
+      padding: .2em 2em;
+      margin: .1em 0;
+      border-right: 1px solid #10dfd3; }
+      .footer ul li:hover {
+        border-right: 2px solid #10dfd3; }
